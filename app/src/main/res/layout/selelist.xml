@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dialog"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:paddingTop="100dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/imageButton1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@mipmap/instagram4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SceneMode"
+            android:id="@+id/textView1"
+            android:layout_column="0"
+            android:textColor="@android:color/white"
+            android:textSize="8dp" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:background="@null"
+                android:id="@+id/imageButton2"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:src="@mipmap/instagram5"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:background="@null"
+                android:id="@+id/imageButton3"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:src="@mipmap/procentbadge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView3" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/imageButton4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@mipmap/showproperty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView4" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton5"
+            android:background="@null"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:src="@mipmap/addimage"
+            android:contentDescription="White Balance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView5" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:background="@null"
+                android:id="@+id/imageButton6"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:src="@mipmap/picture3"
+            android:contentDescription="Color Effect"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView6" />
+
+    </LinearLayout>
+</RelativeLayout>

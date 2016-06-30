@@ -1,0 +1,87 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="preference_save_location"
+        android:title="@string/preference_save_location"
+        android:summary="@string/preference_save_location_summary"
+        android:dialogTitle="@string/preference_save_location"
+        android:dialogMessage="@string/preference_save_location_summary"
+        android:inputType="text"
+        android:defaultValue="OpenCamera"
+        />
+
+    <EditTextPreference
+        android:key="preference_save_location"
+        android:title="@string/preference_save_location"
+        android:inputType="text"
+        android:defaultValue="Camera"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:capitalize="words"
+        android:maxLines="1"
+        />
+
+    <EditTextPreference
+        android:key="preference_save_photo_prefix"
+        android:title="@string/preference_save_photo_prefix"
+        android:inputType="text"
+        android:defaultValue="PIC_"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+
+        />
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_add_friends_to_messages" />
+
+   <ListPreference
+       android:defaultValue="-1"
+        android:key="preference_color_effect"
+        android:title="@string/preference_color_effect"
+       android:entries="@array/pref_coloreffect_array"
+       android:entryValues="@array/pref_coloreffect_array"
+                />
+   <ListPreference
+       android:defaultValue="-1"
+        android:key="preference_scene_mode"
+        android:title="@string/preference_scene_mode"
+       android:entries="@array/pref_scene_mode_array"
+       android:entryValues="@array/pref_scene_mode_array"
+        />
+  <ListPreference
+      android:defaultValue="-1"
+        android:key="preference_white_balance"
+        android:title="@string/preference_white_balance"
+        android:entries="@array/pref_white_balance_array"
+        android:entryValues="@array/pref_white_balance_array"
+         />
+
+
+</PreferenceScreen>

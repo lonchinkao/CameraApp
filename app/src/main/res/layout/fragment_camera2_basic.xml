@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lonch.cameraapp.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:id="@+id/controltop"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:contentDescription="@string/action_settings"
+            android:id="@+id/imageButtonflash"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:src="@drawable/ic_image_flash_auto"
+             android:layout_gravity="right" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                     android:contentDescription="@string/action_settings"
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButtonsys"
+                    android:src="@drawable/ic_camera_rear_white_48dp"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+               />
+
+            <ImageButton
+                android:contentDescription="@string/action_settings"
+                android:id="@+id/info"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/windowapps"
+                 />
+
+            <ImageButton
+                android:contentDescription="Take a picture"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+                android:id="@+id/picture"
+                android:src="@drawable/ic_image_camera"
+                />
+
+            <ImageButton
+                android:contentDescription="@string/action_settings"
+                android:id="@+id/imageButtonsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/info2"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+                 />
+
+            <ImageButton
+                android:contentDescription="@string/exposure_compensation"
+                android:id="@+id/imageButtonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/image"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+
+           />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
